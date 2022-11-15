@@ -160,16 +160,18 @@ def playShuffleVLC(libreria, playList):
     lanzarVLC(libreria, playList)
 
 
-playList = {}
-# playList ={ 1: "titulo cancion", 2: "titulo cancion" ... }
+if __name__ == "__main__":
+
+    playList = {}
+    # playList ={ 1: "titulo cancion", 2: "titulo cancion" ... }
 
 
-libreria = {"California_Uber_Alles.mp3":
-                {"track-number": 3, "artist": "Dead Kennedys", "album": "Dead Kennedys", "location": "./biblioteca/California_Uber_Alles.mp3"},
-            "Seattle_Party": 
-                {"track-number": 1, "artist": "Chastity Belt", "album": "No regrets", "location": "./biblioteca/Seattle_Party.flac"},
-            "King_Kunta":
-                {"track-number": 3, "artist": "Kendrick Lamar", "album": "To Pimp A Butterfly", "location": "./biblioteca/King_Kunta.mp3"}   
-            }
+    libreria = {"California_Uber_Alles.mp3":
+                    {"track-number": 3, "artist": "Dead Kennedys", "album": "Dead Kennedys", "location": "./biblioteca/California_Uber_Alles.mp3"},
+                "Seattle_Party": 
+                    {"track-number": 1, "artist": "Chastity Belt", "album": "No regrets", "location": "./biblioteca/Seattle_Party.flac"},
+                "King_Kunta":
+                    {"track-number": 3, "artist": "Kendrick Lamar", "album": "To Pimp A Butterfly", "location": "./biblioteca/King_Kunta.mp3"}   
+                }
 
-playShuffleVLC(libreria, playList)
+    playShuffleVLC(libreria, playList)
